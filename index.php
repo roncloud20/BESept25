@@ -76,3 +76,6 @@ require_once('assets/header.php');
     <input type="password" name="pass" id="">
     <input type="submit" />
 </form>
+<?php
+require_once('assets/footer.php')
+?>
