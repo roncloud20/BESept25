@@ -1,8 +1,8 @@
 <?php
-$pagetitle = "Calculator";
+$pagetitle = "Services";
 require_once('assets/header.php');
 ?>
-<h1>Calculator</h1>
+<h1>Services</h1>
 <?php
 require_once('assets/footer.php');
 ?>
