@@ -69,6 +69,18 @@ require_once('assets/header.php');
 // echo $_SERVER['PHP_SELF'] . '<br/>';
 // echo $_SERVER['SERVER_SOFTWARE'] . '<br/>';
 // echo $_SERVER['REQUEST_METHOD'] . '<br/>';
+$word = "There is a difference between the man friend and is brother";
+// echo preg_match('/the/', $word);
+// echo "<br/>";
+// echo preg_match_all('/the/i', $word);
+// echo "<br/>";
+// echo preg_replace('/the/', "john", $word);
+
+echo preg_match_all('/[abc]/', $word, $results);
+echo "<br/>";
+echo "<pre>";
+print_r($results);
+echo "</pre>";
 
 ?>
 <h1 class="text-3xl font-bold">Hello World</h1>
@@ -78,5 +90,5 @@ require_once('assets/header.php');
     <input type="submit" />
 </form>
 <?php
-require_once('assets/footer.php')
+// require_once('assets/footer.php')
 ?>
