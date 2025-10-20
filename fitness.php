@@ -29,7 +29,7 @@ if(preg_match('/^\+234|^0[789][01]\d{8}$/', $phone)){
         echo "<h1> $email is valid </h1>";
     }else {
         echo "<h1>Your email: $email does not exist</h1>";
-    }if(preg_match('//'))
+    }
 
 
  }
