@@ -18,7 +18,19 @@ $firstnameError = $lastError = $emailError = "";
     $confirm_password = $_POST['password'];
     // $remember = $_POST['remember'];
 
-    echo "<h2> $firstname, $last, $gender, $weight, $phone, $TL, $email, $password, $confirm_password </h2>";
+    echo "<h2> $firstname, $last, $gender, $weight, $TL, $email, $password, $confirm_password </h2>";
+
+   
+if(preg_match('/^\+234|^0[789][01]\d{8}$/', $phone)){
+        echo "<h1> $phone is valid </h1>";
+    }else {
+        echo "<h1>Your number: $phone does not exist</h1>";
+    }if(preg_match('/[@]./', $email)){
+        echo "<h1> $email is valid </h1>";
+    }else {
+        echo "<h1>Your email: $email does not exist</h1>";
+    }if(preg_match('//'))
+
 
  }
   if(empty($firstname)) {
@@ -33,6 +45,8 @@ $firstnameError = $lastError = $emailError = "";
   if(empty($email)) {
     $emailError = "Email Required";
   }
+
+   
 
  ?>
 
